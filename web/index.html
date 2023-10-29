@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        
+        <script type="text/javascript" src="/eel.js"></script>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Генератор картин от Лизы</title>
+    </head>
+    <body>
+        <br>
+        <main>
+            <div class="block" id="img" style="width: 300px; height: 300px; margin: auto; overflow: hidden;">
+                <h4 style="text-align: center;">👇Введите запрос ниже👇</h4>
+            </div>
+            <br>
+            <h5 style="text-align: center;" id="msg"></h5>
+            <br>
+            <div id="prompter">
+                
+            </div>
+            <h1 style="text-align: center;">Галлерея</h1>
+            <h4 style="text-align: center;" id="img-count"></h4>
+            <button class="btn" id="clear" style="margin: auto;" onclick="ClearGallery()">Очистить галлерею</button>
+            <br>
+            <div class="block gallery-grid" id="gallery"></div>
+        </main>
+        <br>
+    </body>
+    <script src="./js/index.js"></script>
+</html>

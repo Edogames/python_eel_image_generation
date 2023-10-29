@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	transition: all 0.2s ease-in-out;
+	font-family: sans-serif;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+	background: rgb(20, 20, 20);
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background: rgb(0, 204, 10);
+	width: 5px;
+	height: 5px;
+}
+
+html{
+    background: black;
+    color: green;
+}
+
+button, a, .btn, input[type="submit"], input[type="button"]{
+    display: block;
+    border: none;
+    outline: none;
+    background: green;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
+    transform: scale(1);
+}
+button:hover, a:hover, .btn:hover{
+    transform: scale(1.1);
+}
+button:active, a:active, .btn:active{
+    transform: scale(0.9);
+}
+main{
+    background: rgba(49, 49, 49, 0.753);
+    display: block;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+}
+input:not(input[type="button"]):not(input[type="submit"]){
+    display: block;
+    width: 90%;
+    background: white;
+    color: black;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+form{
+    background: rgb(14, 14, 14);
+    width: fit-content;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.d-flex{
+    display: flex;
+}
+.d-block{
+    display: block;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin: auto;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.block{
+    background: rgba(0, 0, 0, 0.726);
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.gallery-img{
+    width: 125px;
+    margin: auto;
+    border-radius: 10px;
+    margin: 5px;
+    transform: scale(1);
+}
+.gallery-img:hover{
+    transform: scale(1.1);
+}
